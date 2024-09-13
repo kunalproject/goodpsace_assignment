@@ -1,0 +1,64 @@
+/* Base styles */
+.head {
+    align-items: center;
+    display: flex;
+}
+
+.head span {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.head img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.section {
+    width: 300px;
+}
+
+.content {
+    margin-top: 15px;
+    text-align: justify;
+}
+
+/* Tablet view - screen width up to 768px */
+@media (max-width: 768px) {
+    .head span {
+        font-size: 16px;
+    }
+
+    .head img {
+        width: 25px;
+    }
+
+    .section {
+        width: 250px;
+    }
+
+    .content {
+        font-size: 14px;
+    }
+}
+
+/* Mobile view - screen width up to 480px */
+@media (max-width: 480px) {
+    .head span {
+        font-size: 14px;
+    }
+
+    .head img {
+        width: 20px;
+    }
+
+    .section {
+        width: 100%;
+    }
+
+    .content {
+        font-size: 12px;
+        text-align: left;
+    }
+}

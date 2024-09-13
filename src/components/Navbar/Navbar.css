@@ -1,0 +1,104 @@
+@font-face {
+    font-family: inter;
+    src: url('.././../../public/fonts_used/Inter_18pt-Regular.ttf');
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    /* Maximum width for large screens */
+    height: 68px;
+    padding: 10px 20px;
+    gap: 0px;
+    border: 0px solid;
+    border-bottom-width: 1px;
+    border-color: rgba(203, 213, 225, 1);
+    justify-content: space-between;
+    opacity: 1;
+    align-items: center;
+    margin: 0 auto;
+    /* Center the navbar */
+}
+.toggle-btn{
+
+    display: none;
+}
+
+.logo img {
+    width: 160px;
+    padding: 8px;
+    gap: 10px;
+    margin-top: 0;
+    mix-blend-mode: darken;
+    opacity: 1;
+}
+
+.side-section {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+}
+.side-section p{
+    margin-top: 25px;
+}
+.text-style {
+    font-family: inter;
+    padding: 5px 20px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    color: #64748B;
+}
+
+@media (max-width: 768px) {
+    .toggle-btn{
+        display: block;
+    }
+    .toggle-btn img{
+        width: 40px;
+    }
+    .nav-bar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .side-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .text-style {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .toggle-btn{
+        display: block;
+    }
+    .toggle-btn img{
+        mix-blend-mode: darken;
+        width: 20px;
+    }
+    .nav-bar {
+        padding: 5px 10px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .text-style {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .side-section {
+        gap: 15px;
+    }
+}

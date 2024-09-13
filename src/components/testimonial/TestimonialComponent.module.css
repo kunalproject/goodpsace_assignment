@@ -1,0 +1,21 @@
+.box{
+    border: 1px solid black;
+    width: 350px;
+    border-radius: 15px;
+}
+.identity{
+    display: flex;
+    align-items: center;
+}
+.identity img {
+    mix-blend-mode: darken;
+    width: 50px;
+    height: 50px;
+}
+.comment{
+    padding-left: 10px;
+    text-align: left;
+}
+.pos{
+    margin-top: -15px;
+}
